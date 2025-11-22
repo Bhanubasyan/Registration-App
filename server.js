@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 // MongoDB Connection
 mongoose
-  .connect("mongodb+srv://bhanubasyan_db_user:WPaaS7gKwpyuxqgB@cluster1.rwapb1j.mongodb.net/registration_db", {
+  .connect("your mongo atlas link here ", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
