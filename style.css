@@ -1,0 +1,109 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url("nature.jpg") no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+    /* Overlay effect for better readability */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.3);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      width: 100%;
+      max-width: 400px;
+      
+     
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #222;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bolder;
+      font-size: 14px;
+      color: #140909;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #2575fc;
+      outline: none;
+      box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.75rem;
+      background: #2575fc;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #4077ce;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .login-link a {
+      color: #c5cbd5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 500px) {
+      .form-container {
+        padding: 1.5rem;
+      }
+      .form-container h2 {
+        font-size: 20px;
+      }
+    }
